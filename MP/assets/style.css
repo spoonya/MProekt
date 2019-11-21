@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+    margin: 0;
+
+    color: #999;
+    background-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+/*Container
+==========================*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*Header
+==========================*/
+.header {
+    padding: 15px 0;
+
+    /*background-color: rgb(70, 70, 70);*/
+}
+
+.header-inner {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    color: #141414;
+}
+
+.header-logo .project {
+    color: #eea215;
+}
+
+.header-info {
+    display: flex;
+}
+
+.header-item {
+    display: flex;
+
+    color: #141414;
+
+    align-items: center;
+}
+
+.header-item::after {
+    display: inline-block;
+
+    width: 1px;
+    height: 100%;
+    margin-left: 10px;
+
+    content: '';
+
+    background-color: rgba(160, 160, 160, .5);
+}
+
+.header-item:last-child::after {
+    content: none;
+}
+
+.header-icon {
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+/*Intro
+==========================*/
+.intro {
+    height: 100vh;
+    padding: 50px 0;
+
+    background: url('images/intro-bg.jpg') center no-repeat;
+    background-color: rgba(0, 0, 0, .8);
+    background-size: cover;
+
+    background-blend-mode: multiply;
+}
+
+.intro-nav {
+    display: flex;
+}
+
+.nav-item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+    position: relative;
+
+    display: flex;
+
+    margin-right: 60px;
+
+    transition: color .1s linear;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+
+    justify-content: center;
+}
+
+.nav-item::after {
+    position: absolute;
+    top: 25px;
+
+    display: block;
+
+    width: 0;
+    height: 2px;
+
+    content: '';
+    transition: width .15s ease-in-out;
+
+    background-color: #eea215;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.nav-item:hover {
+    color: #eea215;
+}
