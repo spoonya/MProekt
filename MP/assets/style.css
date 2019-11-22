@@ -5,6 +5,8 @@ body {
 
     margin: 0;
 
+    letter-spacing: 1.5px;
+
     color: #999;
     background-color: #fff;
 }
@@ -189,7 +191,7 @@ img {
 }
 
 .intro-title {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
 
     text-align: center;
@@ -200,44 +202,58 @@ img {
 }
 
 .intro-subtitle {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
 
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 
     color: #fff;
 }
 
-.intro-btn {
+/*Buttons
+==========================*/
+.btn {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 
     display: inline-block;
 
-    padding: 15px 40px;
-
     transition: all .1s linear;
     vertical-align: center;
     text-decoration: none;
-    text-transform: uppercase;
 
     color: rgba(255, 255, 255, .85);
-    border: 1px rgba(0, 0, 0, .7) solid;
     background-color: rgba(0, 0, 0, .7);
 }
 
-.intro-btn:hover {
+.btn:hover {
     color: #000;
-    border: 1px #eea215 solid;
     background-color: #eea215;
+}
+
+.intro--btn {
+    padding: 15px 40px;
+
+    text-transform: uppercase;
+
+    border: 1px rgba(0, 0, 0, .7) solid;
+}
+
+.intro--btn:hover {
+    border: 1px #eea215 solid;
+}
+
+.services--btn {
+    padding: 10px 25px;
+
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 /*About
 ==========================*/
 .about {
     padding: 50px 0;
-
-    background-color: #f8f8f8;
 }
 
 .about-inner {
@@ -263,7 +279,7 @@ img {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 
-    margin: 5px 0 10px;
+    margin: 10px 0 15px;
 
     color: #3d3d3d;
 }
@@ -280,7 +296,9 @@ img {
 /*Services
 ==========================*/
 .services {
-    padding: 50px 0;
+    padding: 70px 0;
+
+    background-color: #f8f8f8;
 }
 
 .services-inner {
@@ -296,14 +314,14 @@ img {
     display: flex;
     flex-direction: column;
 
-    width: 31.33333%;
-    margin-right: 20px;
-    margin-bottom: 30px;
+    width: 30.33333%;
+    margin-right: 33px;
+    margin-bottom: 33px;
 
     transition: all .2s linear;
     text-align: center;
 
-    border: 1px solid rgba(0, 0, 0, .15);
+    border: 1px solid rgba(0, 0, 0, .05);
 
     align-items: center;
 }
@@ -319,7 +337,7 @@ img {
 }
 
 .services-item:hover .services-item-photo {
-    transition: all .5s ease-out;
+    transition: all .3s ease-out;
     transform: scale(1.1);
 }
 
@@ -350,7 +368,7 @@ img {
 
     width: 60px;
     height: 3px;
-    margin: 20px auto 30px;
+    margin: 20px auto 50px;
 
     content: '';
 
@@ -358,7 +376,7 @@ img {
 }
 
 .services-item-content {
-    padding: 10px 15px;
+    padding: 30px 10px;
 }
 
 .services-item-title {
@@ -366,12 +384,12 @@ img {
     font-size: 16px;
 
     height: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 
     color: #3d3d3d;
 }
 
-.services-item-link {
+.services-item-btn {
     font-weight: 700;
 
     text-decoration: none;
