@@ -1,3 +1,5 @@
+/*General styles
+==========================*/
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -44,6 +46,66 @@ img {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+/*Common styles
+==========================*/
+.title--line::after {
+    display: block;
+
+    width: 60px;
+    height: 3px;
+    margin: 20px auto 70px;
+
+    content: '';
+
+    background-color: #eea215;
+}
+
+/*Buttons
+==========================*/
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+    display: inline-block;
+
+    transition: all .1s linear;
+    vertical-align: center;
+    text-decoration: none;
+
+    color: rgba(255, 255, 255, .85);
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #eea215;
+}
+
+.intro--btn {
+    padding: 15px 40px;
+
+    text-transform: uppercase;
+
+    border: 1px rgba(0, 0, 0, .7) solid;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.intro--btn:hover {
+    border: 1px #eea215 solid;
+}
+
+.services--btn {
+    font-weight: 400;
+
+    padding: 7px 25px;
+
+    color: #eea215;
+    border: 1px solid rgba(238, 162, 21, .4);
+}
+
+.services--btn:hover {
+    color: #fff;
 }
 
 /*Header
@@ -119,7 +181,7 @@ img {
 
     background: #141414
     url('images/intro-bg.jpg') center no-repeat;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .6);
     background-size: cover;
 
     background-blend-mode: multiply;
@@ -128,7 +190,7 @@ img {
 .intro-nav {
     display: flex;
 
-    border-bottom: 1px solid rgba(100, 100, 100, .1);
+    border-bottom: 1px solid rgba(100, 100, 100, .2);
 
     justify-content: flex-end;
 }
@@ -210,46 +272,6 @@ img {
     color: #fff;
 }
 
-/*Buttons
-==========================*/
-.btn {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-
-    display: inline-block;
-
-    transition: all .1s linear;
-    vertical-align: center;
-    text-decoration: none;
-
-    color: rgba(255, 255, 255, .85);
-    background-color: rgba(0, 0, 0, .7);
-}
-
-.btn:hover {
-    color: #000;
-    background-color: #eea215;
-}
-
-.intro--btn {
-    padding: 15px 40px;
-
-    text-transform: uppercase;
-
-    border: 1px rgba(0, 0, 0, .7) solid;
-}
-
-.intro--btn:hover {
-    border: 1px #eea215 solid;
-}
-
-.services--btn {
-    padding: 10px 25px;
-
-    color: #fff;
-    background-color: rgba(0, 0, 0, .5);
-}
-
 /*About
 ==========================*/
 .about {
@@ -304,7 +326,7 @@ img {
 .services-inner {
     display: flex;
 
-    transform: translateX(10px);
+    transform: translateX(20px);
 
     flex-wrap: wrap;
     justify-content: center;
@@ -363,18 +385,6 @@ img {
     color: #3d3d3d;
 }
 
-.services-title::after {
-    display: block;
-
-    width: 60px;
-    height: 3px;
-    margin: 20px auto 50px;
-
-    content: '';
-
-    background-color: #eea215;
-}
-
 .services-item-content {
     padding: 30px 10px;
 }
@@ -383,7 +393,6 @@ img {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 
-    height: 48px;
     margin-bottom: 25px;
 
     color: #3d3d3d;
@@ -395,4 +404,52 @@ img {
     text-decoration: none;
 
     color: #3d3d3d;
+}
+
+/*Projects
+==========================*/
+.projects {
+    padding: 70px 0 0;
+
+    background-color: #202020;
+}
+
+.projects-inner {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.projects-item {
+    width: 33.33333%;
+    /*border-right: 1px solid #202020;
+    border-bottom: 1px solid #202020;*/
+}
+
+.projects-item-img {
+    /*position: relative;*/
+
+    width: 100%;
+    /*padding-top: 66.66%;*/
+}
+
+.projects-item-photo {
+    /*position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;*/
+    object-fit: cover;
+    height: 300px;
 }
