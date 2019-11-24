@@ -476,7 +476,7 @@ img {
 /*Projects
 ==========================*/
 .projects {
-    padding: 70px 0 60px;
+    padding: 70px 0 0;
 }
 
 .projects-inner {
@@ -595,4 +595,64 @@ img {
     margin-right: 5px;
 
     fill: #eea215;
+}
+
+/*Reviews
+==========================*/
+.reviews {
+    padding: 70px 0;
+
+    background-color: #f8f8f8;
+}
+
+/*Contacts
+==========================*/
+.contacts {
+    padding: 50px 0 0;
+}
+
+.contacts-inner {
+    background-color: #191919;
+}
+
+.contacts-info {
+    display: flex;
+
+    padding: 50px 0;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacts-item {
+    line-height: 1.7;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 25%;
+}
+
+.contacts-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+    display: flex;
+
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+
+    align-items: center;
+}
+
+.copyright {
+    padding: 15px 0;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, .8);
+    background-color: #1c1c1c;
 }
