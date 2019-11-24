@@ -206,7 +206,6 @@ img {
 /*Intro
 ==========================*/
 .intro {
-    height: 100vh;
     padding: 50px 0;
 
     background: #141414
@@ -328,7 +327,7 @@ img {
     text-transform: uppercase;
 
     color: #eea215;
-    text-shadow: 1px 1px 2px #000;
+    text-shadow: 1px 1px 3px #000;
 }
 
 .intro-subtitle {
@@ -450,10 +449,8 @@ img {
     object-fit: cover;
 }
 
-
-
 .services-item-content {
-    padding: 30px 10px;
+    padding: 30px 15px;
 }
 
 .services-item-title {
@@ -612,7 +609,7 @@ img {
 }
 
 .contacts-inner {
-    background-color: #191919;
+    background-color: #1c1c1c;
 }
 
 .contacts-info {
@@ -631,6 +628,8 @@ img {
     flex-direction: column;
 
     width: 24%;
+
+    text-align: center;
 }
 
 .contacts-title {
@@ -645,6 +644,7 @@ img {
 
     color: #fff;
 
+    justify-content: center;
     align-items: center;
 }
 
@@ -654,5 +654,5 @@ img {
     text-align: center;
 
     color: rgba(255, 255, 255, .8);
-    background-color: #1c1c1c;
+    background-color: #191919;
 }
