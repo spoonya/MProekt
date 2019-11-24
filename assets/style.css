@@ -118,7 +118,7 @@ img {
     padding: 12px 50px;
 
     color: #eea215;
-    border: 1px solid rgba(238, 162, 21, .4);
+    border: 1px solid #eea215;
 }
 
 .about--btn:hover {
@@ -209,7 +209,7 @@ img {
     padding: 50px 0;
 
     background: #141414
-    url('images/intro-bg.jpg') center no-repeat;
+    url('images/intro-bg.webp') center no-repeat;
     background-color: rgba(0, 0, 0, .5);
     background-size: cover;
 
@@ -359,7 +359,7 @@ img {
     flex-direction: column;
 
     width: 25%;
-    padding: 0 30px;
+    padding: 0 20px;
 
     text-align: center;
 
