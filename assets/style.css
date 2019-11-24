@@ -9,7 +9,7 @@ body {
 
     letter-spacing: 1.5px;
 
-    color: #999;
+    color: #707070;
     background-color: #fff;
 }
 
@@ -75,19 +75,19 @@ img {
 .projects .title--line::after {
     margin: 20px auto 30px;
 }
+
 /*Buttons
 ==========================*/
 .btn {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 
     display: inline-block;
 
+    cursor: pointer;
     transition: all .1s linear;
     vertical-align: center;
     text-decoration: none;
-
-    color: rgba(255, 255, 255, .9);
 }
 
 .btn:hover {
@@ -96,10 +96,13 @@ img {
 }
 
 .intro--btn {
+    font-weight: 700;
+
     padding: 15px 40px;
 
     text-transform: uppercase;
 
+    color: rgba(255, 255, 255, .9);
     border: 1px #eea215 solid;
     background-color: rgba(238, 162, 21, .8);
 }
@@ -110,9 +113,21 @@ img {
     border: 1px #eea215 solid;
 }
 
-.services--btn {
-    font-weight: 400;
+.about--btn {
+    margin: 70px 0 0;
+    padding: 12px 50px;
 
+    color: #eea215;
+    border: 1px solid rgba(238, 162, 21, .4);
+}
+
+.about--btn:hover {
+    transform: translateY(-2px);
+
+    color: #fff;
+}
+
+.services--btn {
     padding: 7px 25px;
 
     color: #eea215;
@@ -325,20 +340,22 @@ img {
     color: #fff;
 }
 
-/*features
+/*About
 ==========================*/
-.features {
+.about {
     padding: 50px 0;
+
+    text-align: center;
 }
 
-.features-inner {
+.about-inner {
     display: flex;
 
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.features-item {
+.about-item {
     display: flex;
     flex-direction: column;
 
@@ -350,7 +367,7 @@ img {
     align-items: center;
 }
 
-.features-item-title {
+.about-item-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 
@@ -359,13 +376,17 @@ img {
     color: #3d3d3d;
 }
 
-.features-icon {
+.about-icon {
     display: block;
 
     width: 50px;
     height: 50px;
 
     fill: #eea215;
+}
+
+.about-txt {
+    margin-top: 50px;
 }
 
 /*Services
@@ -429,9 +450,7 @@ img {
     object-fit: cover;
 }
 
-.services-title {
-    
-}
+
 
 .services-item-content {
     padding: 30px 10px;
@@ -576,10 +595,4 @@ img {
     margin-right: 5px;
 
     fill: #eea215;
-}
-
-/*About
-==========================*/
-.about {
-    padding: 10px 0 70px;
 }
