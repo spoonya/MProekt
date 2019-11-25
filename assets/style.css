@@ -12,7 +12,7 @@ body {
     color: #707070;
     background-color: #fff;
 
-    text-rendering: optimizeSpeed;
+    text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
 }
 
@@ -91,10 +91,6 @@ img {
     content: '';
 
     background-color: #eea215;
-}
-
-.projects .title--line::after {
-    margin: 20px auto 30px;
 }
 
 /*Buttons
@@ -233,6 +229,7 @@ img {
     background: #141414
     url('images/i6.webp') center no-repeat;
     background-color: rgba(0, 0, 0, .5);
+    background-attachment: fixed;
     background-size: cover;
 
     background-blend-mode: multiply;
@@ -369,6 +366,8 @@ img {
     padding: 50px 0;
 
     text-align: center;
+
+    background-color: #f5f5f5;
 }
 
 .about-inner {
@@ -417,7 +416,7 @@ img {
 .services {
     padding: 70px 0;
 
-    background-color: #f8f8f8;
+    background-color: #efeeee;
 }
 
 .services-inner {
@@ -499,6 +498,8 @@ img {
 ==========================*/
 .projects {
     padding: 70px 0 0;
+
+    background-color: #f5f5f5;
 }
 
 .projects-inner {
@@ -624,7 +625,7 @@ img {
 .reviews {
     padding: 70px 0 100px;
 
-    background-color: #f8f8f8;
+    background-color: #efeeee;
 }
 
 .reviews-slider {
@@ -641,8 +642,6 @@ img {
 
 .glide__arrow.glide__arrow--left,
 .glide__arrow.glide__arrow--right {
-    font-size: 20px;
-
     position: absolute;
     top: 0;
     top: 50%;
@@ -653,17 +652,6 @@ img {
     cursor: pointer;
     transition: all .2s ease;
     transform: translate(0, -50%);
-
-    color: rgba(0, 0, 0, .8);
-    border-radius: 50px;
-    background-color: rgba(238, 162, 21, .7);
-}
-
-.glide__arrow.glide__arrow--left:hover,
-.glide__arrow.glide__arrow--right:hover {
-    color: #000;
-    border-color: #eea215;
-    background-color: #eea215;
 }
 
 .glide__arrow.glide__arrow--left {
@@ -701,10 +689,35 @@ img {
     padding: 20px 20px 50px;
 }
 
+.slider-icon {
+    width: 50px;
+    height: 50px;
+
+    transition: all .2s linear;
+
+    border-radius: 50px;
+
+    fill: #eea215;
+}
+
+.slider-icon:active {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 45px;
+    box-shadow: 0 0 30px -10px;
+}
+
+.glide__arrow.glide__arrow--left .slider-icon {
+    transform: rotate(180deg);
+}
+
 /*Contacts
 ==========================*/
 .contacts {
     padding: 50px 0 0;
+
+    background-color: #f5f5f5;
 }
 
 .contacts-inner {
@@ -739,6 +752,7 @@ img {
 
     margin-bottom: 10px;
 
+    transform: translateX(-5px);
     text-transform: uppercase;
 
     color: #fff;
