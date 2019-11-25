@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/glide js/glide.core.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/glide js/glide.theme.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;Roboto&display=swap&subset=cyrillic" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Институт Молодечнопроект. Проектные работы</title>
@@ -107,12 +109,30 @@
         </symbol>
         <symbol id="email" viewBox="0 0 230.17 230.17">
             <g>
-                <path d="M230,49.585c0-0.263,0.181-0.519,0.169-0.779l-70.24,67.68l70.156,65.518c0.041-0.468-0.085-0.94-0.085-1.418V49.585z"/>
+                <path d="M230,49.585c0-0.263,0.181-0.519,0.169-0.779l-70.24,67.68l70.156,65.518c0.041-0.468-0.085-0.94-0.085-1.418V49.585z" />
                 <path d="M149.207,126.901l-28.674,27.588c-1.451,1.396-3.325,2.096-5.2,2.096c-1.836,0-3.672-0.67-5.113-2.013l-28.596-26.647
-                    L11.01,195.989c1.717,0.617,3.56,1.096,5.49,1.096h197.667c2.866,0,5.554-0.873,7.891-2.175L149.207,126.901z"/>
+                    L11.01,195.989c1.717,0.617,3.56,1.096,5.49,1.096h197.667c2.866,0,5.554-0.873,7.891-2.175L149.207,126.901z" />
                 <path d="M115.251,138.757L222.447,35.496c-2.427-1.443-5.252-2.411-8.28-2.411H16.5c-3.943,0-7.556,1.531-10.37,3.866
-                    L115.251,138.757z"/>
-                <path d="M0,52.1v128.484c0,1.475,0.339,2.897,0.707,4.256l69.738-67.156L0,52.1z"/>
+                    L115.251,138.757z" />
+                <path d="M0,52.1v128.484c0,1.475,0.339,2.897,0.707,4.256l69.738-67.156L0,52.1z" />
+            </g>
+        </symbol>
+        <symbol id="quote" viewBox="0 0 475.082 475.081">
+            <g>
+                <path d="M164.45,219.27h-63.954c-7.614,0-14.087-2.664-19.417-7.994c-5.327-5.33-7.994-11.801-7.994-19.417v-9.132
+                c0-20.177,7.139-37.401,21.416-51.678c14.276-14.272,31.503-21.411,51.678-21.411h18.271c4.948,0,9.229-1.809,12.847-5.424
+                c3.616-3.617,5.424-7.898,5.424-12.847V54.819c0-4.948-1.809-9.233-5.424-12.85c-3.617-3.612-7.898-5.424-12.847-5.424h-18.271
+                c-19.797,0-38.684,3.858-56.673,11.563c-17.987,7.71-33.545,18.132-46.68,31.267c-13.134,13.129-23.553,28.688-31.262,46.677
+                C3.855,144.039,0,162.931,0,182.726v200.991c0,15.235,5.327,28.171,15.986,38.834c10.66,10.657,23.606,15.985,38.832,15.985
+                h109.639c15.225,0,28.167-5.328,38.828-15.985c10.657-10.663,15.987-23.599,15.987-38.834V274.088
+                c0-15.232-5.33-28.168-15.994-38.832C192.622,224.6,179.675,219.27,164.45,219.27z" />
+                <path d="M459.103,235.256c-10.656-10.656-23.599-15.986-38.828-15.986h-63.953c-7.61,0-14.089-2.664-19.41-7.994
+                c-5.332-5.33-7.994-11.801-7.994-19.417v-9.132c0-20.177,7.139-37.401,21.409-51.678c14.271-14.272,31.497-21.411,51.682-21.411
+                h18.267c4.949,0,9.233-1.809,12.848-5.424c3.613-3.617,5.428-7.898,5.428-12.847V54.819c0-4.948-1.814-9.233-5.428-12.85
+                c-3.614-3.612-7.898-5.424-12.848-5.424h-18.267c-19.808,0-38.691,3.858-56.685,11.563c-17.984,7.71-33.537,18.132-46.672,31.267
+                c-13.135,13.129-23.559,28.688-31.265,46.677c-7.707,17.987-11.567,36.879-11.567,56.674v200.991
+                c0,15.235,5.332,28.171,15.988,38.834c10.657,10.657,23.6,15.985,38.828,15.985h109.633c15.229,0,28.171-5.328,38.827-15.985
+                c10.664-10.663,15.985-23.599,15.985-38.834V274.088C475.082,258.855,469.76,245.92,459.103,235.256z" />
             </g>
         </symbol>
     </svg>
@@ -347,8 +367,40 @@
     <section class="reviews">
         <div class="container">
             <h2 class="title title--line">Клиенты о нас</h2>
-        </div>
-    </section>
+            <div class="reviews-slider">
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="reviews-item">     
+                                    <p class="reviews-txt">
+                                        <svg class="projects-icon">
+                                            <use xlink:href="#quote"></use>
+                                        </svg>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet error, rem ipsam deleniti quidem excepturi, blanditiis, vero nulla laborum voluptatem animi placeat laudantium sunt magni saepe nihil dolorum in eius! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus vel a eius repellendus ipsum rem placeat accusamus molestias ipsam officia, porro reiciendis, accusantium ratione. Quas delectus doloribus, accusamus ullam voluptate.</p>
+                                     <div class="reviews-author">Валерий Жмышенко</div>
+                                </div>    
+                            </li> <!-- /.glide__slide -->
+                            <li class="glide__slide">
+                                <div class="reviews-item">     
+                                    <p class="reviews-txt">
+                                        <svg class="projects-icon">
+                                            <use xlink:href="#quote"></use>
+                                        </svg>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet error, rem ipsam deleniti quidem excepturi, blanditiis, vero nulla laborum voluptatem animi placeat laudantium sunt magni saepe nihil dolorum in eius!</p>
+                                     <div class="reviews-author">Виталя Цаль</div>
+                                </div>    
+                            </li> <!-- /.glide__slide -->
+                        </ul> <!-- /.glide__slides -->
+                    </div> <!-- /.glide__track -->
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+                    </div>
+                </div> <!-- /.glide -->
+            </div> <!-- /.reviews-slider -->
+        </div> <!-- /.container -->
+    </section> <!-- /.reviews -->
     <!--Footer-->
     <footer class="contacts">
         <h2 class="title title--line">Наши контакты</h2>
@@ -404,6 +456,14 @@
             </div>
         </div> <!-- /.contacts-inner -->
     </footer> <!-- /.contacts -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+    const cfg = {
+        type: 'carousel',
+        perView: 2
+    }
+    new Glide('.glide', cfg).mount()
+    </script>
 </body>
 
 </html>
