@@ -60,6 +60,10 @@ img {
     height: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Container
 ==========================*/
 .container {
@@ -91,6 +95,14 @@ img {
     content: '';
 
     background-color: #eea215;
+}
+
+.nav-item.active {
+    color: #eea215;
+}
+
+.nav-item.active::after {
+    width: 100%;
 }
 
 /*Buttons
@@ -173,8 +185,10 @@ img {
     font-size: 20px;
     font-weight: 700;
 
-    text-transform: uppercase;
+    text-transform: uppercase;  
+}
 
+.header-logo a {
     color: #3d3d3d;
 }
 
@@ -227,7 +241,7 @@ img {
     padding: 50px 0;
 
     background: #141414
-    url('images/i6.webp') center no-repeat;
+    url('img/i6.webp') center no-repeat;
     background-color: rgba(0, 0, 0, .5);
     background-attachment: fixed;
     background-size: cover;
@@ -366,8 +380,9 @@ img {
     padding: 50px 0;
 
     text-align: center;
-
-    background-color: #f5f5f5;
+    
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .about-inner {
@@ -416,7 +431,8 @@ img {
 .services {
     padding: 70px 0;
 
-    background-color: #efeeee;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .services-inner {
@@ -499,7 +515,7 @@ img {
 .projects {
     padding: 70px 0 0;
 
-    background-color: #f5f5f5;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .projects-inner {
@@ -625,14 +641,15 @@ img {
 .reviews {
     padding: 70px 0 100px;
 
-    background-color: #efeeee;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .reviews-slider {
     position: relative;
 
     width: 100%;
-    max-width: 1000px;
+    max-width: 500px;
     margin: 0 auto;
 
     cursor: grab;
@@ -655,11 +672,11 @@ img {
 }
 
 .glide__arrow.glide__arrow--left {
-    left: -8%;
+    left: -13%;
 }
 
 .glide__arrow.glide__arrow--right {
-    right: -8%;
+    right: -13%;
 }
 
 .reviews-item {
@@ -670,7 +687,7 @@ img {
 
     text-align: center;
 
-    background-color: #fff;
+    background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
 }
 
 .reviews-author {
@@ -715,9 +732,7 @@ img {
 /*Contacts
 ==========================*/
 .contacts {
-    padding: 50px 0 0;
-
-    background-color: #f5f5f5;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .contacts-inner {
@@ -744,6 +759,10 @@ img {
     text-align: center;
 }
 
+.contacts .title {
+    padding: 50px 0 0;
+}
+
 .contacts-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -768,4 +787,44 @@ img {
 
     color: rgba(255, 255, 255, .8);
     background-color: #191919;
+}
+
+
+/* ...................................
+            Inner pages
+.....................................*/
+
+/*Common styles
+==========================*/
+
+/*Header*/
+.header--mod {
+    border-bottom: 1px solid ;
+}
+
+/*Nav*/
+.nav--mod {
+    padding: 30px 0;
+    justify-content: flex-start;
+}
+
+.nav--mod .nav-item {
+    color: #3d3d3d;
+}
+
+.title--mod {
+    font-size: 50px;
+    color: #eea215;
+}
+
+/*About us
+==========================*/
+.about-us {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+    padding: 50px 0;
+}
+
+.list-services-item {
+    margin-left: 40px;
 }
