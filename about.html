@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="utf-8">
-	 <link rel="stylesheet" href="assets/style.css">
-	<link rel="stylesheet" href="assets/glideJS/glide.core.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;Roboto&display=swap&subset=cyrillic" rel="stylesheet">
-	<title>Об организации Институт Молодечнопроект</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/glideJS/glide.core.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>Об организации Институт Молодечнопроект</title>
 </head>
+
 <body>
-	 <!--SVG-->
+    <!--SVG-->
     <svg style="display: none;">
         <symbol id="phone" viewBox="0 0 348.077 348.077">
             <g>
@@ -36,10 +38,21 @@
                 <path d="M0,52.1v128.484c0,1.475,0.339,2.897,0.707,4.256l69.738-67.156L0,52.1z" />
             </g>
         </symbol>
+        <symbol id="arrow-right" viewBox="0 0 54 54">
+            <g>
+                <path d="M27,53L27,53C12.641,53,1,41.359,1,27v0C1,12.641,12.641,1,27,1h0c14.359,0,26,11.641,26,26v0
+                C53,41.359,41.359,53,27,53z" />
+                <path d="M27,54C12.112,54,0,41.888,0,27S12.112,0,27,0s27,12.112,27,27S41.888,54,27,54z M27,2
+                C13.215,2,2,13.215,2,27s11.215,25,25,25s25-11.215,25-25S40.785,2,27,2z" />
+                <path style="fill:#FFFFFF;" d="M22.294,40c-0.256,0-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414L32.88,27
+                L21.587,15.707c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0l11.498,11.498c0.667,0.667,0.667,1.751,0,2.418
+                L23.001,39.707C22.806,39.902,22.55,40,22.294,40z" />
+            </g>
+        </symbol>
     </svg>
 
     <!--Header-->
-	<header class="header header--mod">
+    <header class="header header--mod">
         <div class="container">
             <div class="header-inner">
                 <div class="header-logo"><a href="index.html">Молодечно<span class="project">проект</span></a></div>
@@ -64,40 +77,74 @@
                     </div>
                 </div> <!-- /.header-info -->
             </div> <!-- /.header-inner -->
-            <nav class="intro-nav nav--mod">
-                <a href="index.html" class="nav-item">Главная</a>
-                <a href="about.html" class="nav-item active">О нас</a>
-                <a href="#" class="nav-item">Услуги</a>
-                <a href="#" class="nav-item">Проекты</a>
-                <a href="#" class="nav-item">Отзывы</a>
-                <a href="#" class="nav-item">Контакты</a>
+            <nav class="intro-nav nav--mod" id="nav">
+                <a href="index.html" class="nav-item" data-scroll="#intro">Главная</a>
+                <a href="index.html#about" class="nav-item active" data-scroll="#about">О нас</a>
+                <a href="index.html#services" class="nav-item" data-scroll="#services">Услуги</a>
+                <a href="index.html#projects" class="nav-item" data-scroll="#projects">Проекты</a>
+                <a href="index.html#reviews" class="nav-item" data-scroll="#reviews">Отзывы</a>
+                <a href="index.html#contacts" class="nav-item" data-scroll="#contacts">Контакты</a>
             </nav>
         </div> <!-- /.container -->
     </header> <!-- /.header -->
-	
-	<!--About-us-->
-	<div class="about-us">
-		<div class="container">
-			<h1 class="title title--mod title--line">&#171;О компании&#187;</h1>
-			<p class="about-us-txt"><b>УП «Институт Молодечнопроект»</b> 	&#8212; одно из самых крупных предприятий города Молодечно, специализирующееся на выполнении проектных работ и обслуживании инженерных сетей. </p>
-			<p>За 70 лет успешной профессиональной деятельности организация зарекомендовала себя как ответственный, надежный и проверенный исполнитель, который способен справится с задачей любой сложности. </p>
-			<p>Специалисты УП "Институт Молодечнопроект" занимаются проектирование зданий любого назначнения: жилого фонда, а также школ, детских садов, магазинов, административных зданий. Среди реализованных проектов предприятия - молитвенный дом по ул. Виленской в Молодечно, СШ №14, автовокзал, здание Молодеченского ГРОЧС и другие.</p>
-			<p>	
-				<ul class="list-services">
-					<b>В широкий спектр наших услуг входит:</b>
-					<li class="list-services-item">проектирование жилых и общественных зданий;</li>
-					<li class="list-services-item">архитектурное проектирование зданий;</li>
-					<li class="list-services-item">обслуживание инженерных сетей;</li>
-					<li class="list-services-item">инженерное оборудование домов;</li>
-					<li class="list-services-item">функции генерального проектировщика.</li>
-				</ul>			
-			</p>
-			<p>Также мы специализируемся на составлении сметной документации, разработке технологичных решений и многом другом.
-		 	Над каждым полученным заказом работают лучшие специалисты в области проектирования, которые точно знают, что нужно клиенту. Мы шагаем в ногу со временем, поэтому постоянно учимся чему-то новому, посещая конференции, мастер-классы, спецкурсы, в том числе организованные Министерством архитектуры. </p>
-		</div>
-	</div>
 
-	<!--Footer-->
+    <!--About-us-->
+    <div class="about-us">
+        <div class="container">
+            <div class="txt-container">
+                <h1 class="title title--mod title--line">О компании</h1>
+                <p class="about-us-txt"><b>УП «Институт Молодечнопроект»</b> &#8212; одно из самых крупных предприятий города Молодечно, специализирующееся на выполнении проектных работ и обслуживании инженерных сетей. </p>
+                <p>За 70 лет успешной профессиональной деятельности организация зарекомендовала себя как ответственный, надежный и проверенный исполнитель, который способен справится с задачей любой сложности. </p>
+                <p>Специалисты УП "Институт Молодечнопроект" занимаются проектирование зданий любого назначнения: жилого фонда, а также школ, детских садов, магазинов, административных зданий. Среди реализованных проектов предприятия - молитвенный дом по ул. Виленской в Молодечно, СШ №14, автовокзал, здание Молодеченского ГРОЧС и другие.</p>
+                <p>
+                    <ul class="list-services">
+                        <b>В широкий спектр наших услуг входит:</b>
+                        <li class="list-services-item">проектирование жилых и общественных зданий;</li>
+                        <li class="list-services-item">архитектурное проектирование зданий;</li>
+                        <li class="list-services-item">обслуживание инженерных сетей;</li>
+                        <li class="list-services-item">инженерное оборудование домов;</li>
+                        <li class="list-services-item">функции генерального проектировщика.</li>
+                    </ul>
+                </p>
+                <p>Также мы специализируемся на составлении сметной документации, разработке технологичных решений и многом другом.
+                    Над каждым полученным заказом работают лучшие специалисты в области проектирования, которые точно знают, что нужно клиенту. Мы шагаем в ногу со временем, поэтому постоянно учимся чему-то новому, посещая конференции, мастер-классы, спецкурсы, в том числе организованные Министерством архитектуры.</p>
+
+                <!--Slider-->
+                <h2 class="title title--sertif title--line">Аттестаты соответствия</h2>
+                <div class="sertif-slider">
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                	<img src="assets/img/Sertif/1.jpg" alt="Аттестат соответствия №0000134-ПП">
+                                </li> 
+                                 <li class="glide__slide">
+                                	<img src="assets/img/Sertif/2.jpg" alt="Аттестат соответствия №0000116-ГП">
+                                </li> 
+                                 <li class="glide__slide">
+                                	<img src="assets/img/Sertif/3.jpg" alt="Аттестат соответствия №0000153-ПР">
+                                </li> 
+                            </ul> 
+                        </div> 
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                <svg class="slider-icon">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                <svg class="slider-icon">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div> <!-- /.glide -->
+                </div> <!-- /.sertif-slider -->
+            </div> <!-- /.txt-container -->
+        </div> <!-- /.container -->
+    </div> <!-- /.about-us -->
+
+    <!--Footer-->
     <footer class="contacts">
         <div class="contacts-inner">
             <div class="container">
@@ -148,5 +195,15 @@
             <div class="copyright">&copy; mp.by 2019</div>
         </div> <!-- /.contacts-inner -->
     </footer> <!-- /.contacts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+    const cfg = {
+        type: 'carousel',
+        perView: 1
+    }
+    new Glide('.glide', cfg).mount()
+    </script>
 </body>
+
 </html>
