@@ -147,8 +147,8 @@ a {
     padding: 12px 50px;
 
     color: rgba(255, 255, 255, .95);
-    background-color: rgba(238, 162, 21, .85);
     border: 1px solid #eea215;
+    background-color: rgba(238, 162, 21, .85);
 }
 
 .about--btn:hover {
@@ -358,7 +358,6 @@ a {
 
     margin-bottom: 20px;
 
-    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -382,7 +381,6 @@ a {
 
     text-align: center;
 
-    
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
@@ -433,6 +431,7 @@ a {
     padding: 70px 0;
 
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    box-shadow: inset 0 0 100px 20px rgba(0, 0, 0, .1);
 }
 
 .services-inner {
@@ -642,6 +641,7 @@ a {
     padding: 70px 0 100px;
 
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    box-shadow: inset 0 0 100px 20px rgba(0, 0, 0, .1);
 }
 
 .reviews-slider {
@@ -822,24 +822,27 @@ a {
     color: #eea215;
 }
 
+.list-item {
+    margin-left: 40px;
+}
+
+.inner--page {
+    padding: 65px 50px;
+}
+
 /*About us
 ==========================*/
 .about-us {
-    padding: 50px;
-
-    background: url('img/i6.webp') center no-repeat;
+    background: url('img/i2.webp') center no-repeat;
     background-color: rgba(0, 0, 0, .5);
     background-size: cover;
 
     background-blend-mode: multiply;
 }
 
-.list-services-item {
-    margin-left: 40px;
-}
-
 .txt-container {
     padding: 50px;
+
     border-radius: 10px;
     background-color: rgba(255, 255, 255, .9);
 }
@@ -871,4 +874,94 @@ a {
 
 .sertif-slider .glide__arrow.glide__arrow--right {
     right: -20%;
+}
+
+/*Archi-proj
+==========================*/
+
+.archi-proj {
+    background: url('img/i6.webp') center no-repeat;
+    background-color: rgba(0, 0, 0, .5);
+    background-size: cover;
+
+    background-blend-mode: multiply;
+}
+
+.title--service1 {
+    margin-top: 50px;
+}
+
+.archi-proj img {
+    float: right;
+
+    max-width: 400px;
+    max-height: 300px;
+}
+
+/*Const-proj
+==========================*/
+.const-proj {
+    background: url('img/i1.webp') center no-repeat;
+    background-color: rgba(0, 0, 0, .5);
+    background-size: cover;
+
+    background-blend-mode: multiply;
+}
+
+.const-proj  img {
+    float: right;
+
+    max-width: 400px;
+    max-height: 400px;
+}
+
+/*Building sys
+==========================*/
+.build-sys {
+    background: url('img/i5.webp') center no-repeat;
+    background-color: rgba(0, 0, 0, .5);
+    background-size: cover;
+
+    background-blend-mode: multiply;
+}
+
+.build-sys img {
+    float: right;
+
+    max-width: 400px;
+    max-height: 400px;
+}
+
+/*Docs
+==========================*/
+.docs {
+    background: url('img/i3.webp') center no-repeat;
+    background-color: rgba(0, 0, 0, .5);
+    background-size: cover;
+
+    background-blend-mode: multiply;
+}
+
+.docs img {
+    float: right;
+
+    max-width: 400px;
+    max-height: 400px;
+}
+
+/*Spec-docs
+==========================*/
+.spec-docs {
+    background: url('img/i4.webp') center no-repeat;
+    background-color: rgba(0, 0, 0, .5);
+    background-size: cover;
+
+    background-blend-mode: multiply;
+}
+
+.spec-docs img {
+    float: right;
+
+    max-width: 400px;
+    max-height: 400px;
 }
