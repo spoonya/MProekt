@@ -238,6 +238,8 @@ a {
 /*Intro
 ==========================*/
 .intro {
+    position: relative;
+
     height: 100vh;
     padding: 50px 0;
 
@@ -251,6 +253,9 @@ a {
 }
 
 .intro-nav {
+    position: relative;
+    z-index: 1000;
+
     display: flex;
 
     border-bottom: 1px solid rgba(255, 255, 255, .08);
@@ -308,10 +313,16 @@ a {
 .intro-inner {
     font-family: 'Monrserrat', sans-serif;
 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin-right: -50%;
     padding: 150px 0;
 
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -550,9 +561,6 @@ a {
     position: relative;
 
     width: 33.33333%;
-
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff;
 }
 
 .projects-item-img {
@@ -728,6 +736,48 @@ a {
     transform: rotate(180deg);
 }
 
+/*Why
+==========================*/
+.why {
+    position: relative;
+
+    padding: 70px 0 0;
+
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.why-inner {
+    padding: 20px 0 70px;
+}
+
+.why-photo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    max-width: 500px;
+    margin-left: -50%;
+}
+
+.why .title {
+    text-align: left;
+}
+
+.why .title--line::after {
+    margin: 20px 0 70px;
+}
+
+.why-list-item {
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+.why-list {
+    max-width: 700px;
+    width: 100%;
+}
+
 /*Contacts
 ==========================*/
 .contacts {
@@ -788,7 +838,6 @@ a {
     background-color: #191919;
 }
 
-
 /* ...................................
             Inner pages
 .....................................*/
@@ -817,7 +866,7 @@ a {
 }
 
 .title--mod {
-    font-size: 50px;
+    font-size: 40px;
 
     color: #eea215;
 }
@@ -835,6 +884,7 @@ a {
 .about-us {
     background: url('img/i2.webp') center no-repeat;
     background-color: rgba(0, 0, 0, .5);
+    background-attachment: fixed;
     background-size: cover;
 
     background-blend-mode: multiply;
@@ -882,6 +932,7 @@ a {
 .archi-proj {
     background: url('img/i6.webp') center no-repeat;
     background-color: rgba(0, 0, 0, .5);
+    background-attachment: fixed;
     background-size: cover;
 
     background-blend-mode: multiply;
@@ -903,6 +954,7 @@ a {
 .const-proj {
     background: url('img/i1.webp') center no-repeat;
     background-color: rgba(0, 0, 0, .5);
+    background-attachment: fixed;
     background-size: cover;
 
     background-blend-mode: multiply;
@@ -920,6 +972,7 @@ a {
 .build-sys {
     background: url('img/i5.webp') center no-repeat;
     background-color: rgba(0, 0, 0, .5);
+    background-attachment: fixed;
     background-size: cover;
 
     background-blend-mode: multiply;
@@ -937,6 +990,7 @@ a {
 .docs {
     background: url('img/i3.webp') center no-repeat;
     background-color: rgba(0, 0, 0, .5);
+    background-attachment: fixed;
     background-size: cover;
 
     background-blend-mode: multiply;
@@ -954,6 +1008,7 @@ a {
 .spec-docs {
     background: url('img/i4.webp') center no-repeat;
     background-color: rgba(0, 0, 0, .5);
+    background-attachment: fixed;
     background-size: cover;
 
     background-blend-mode: multiply;
