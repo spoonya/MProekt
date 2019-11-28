@@ -40,8 +40,8 @@ const cfgGlide = {
     new Glide('.glide', cfgGlide).mount()
 
 /*Parallax*/
-let rellaxTitle = new Rellax('.intro-title', {
-    speed: 2,
+/*let rellaxTitle = new Rellax('.intro-title', {
+    speed: -1,
     center: true,
     wrapper: null,
     round: true,
@@ -56,4 +56,4 @@ let rellaxSubTitle = new Rellax('.intro-subtitle', {
     round: true,
     vertical: true,
     horizontal: false
-});
+});*/
