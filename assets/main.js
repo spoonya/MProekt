@@ -31,3 +31,29 @@ $('[data-scroll]').on('click', function(event) {
       scrollTop: elOffset + 1
     }, 500)
 })
+
+/*Glide*/
+const cfgGlide = {
+        type: 'carousel',
+        perView: 1
+    }
+    new Glide('.glide', cfgGlide).mount()
+
+/*Parallax*/
+let rellaxTitle = new Rellax('.intro-title', {
+    speed: 2,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+});
+
+let rellaxSubTitle = new Rellax('.intro-subtitle', {
+    speed: -1,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+});
