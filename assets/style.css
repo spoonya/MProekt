@@ -566,8 +566,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    transform: translateX(20px);
 }
 
 .services-item {
@@ -576,7 +574,7 @@ a {
     flex-direction: column;
 
     width: 30.33333%;
-    margin-right: 33px;
+    margin: 0 15px;
     margin-bottom: 33px;
 
     transition: all .2s linear;
@@ -676,8 +674,7 @@ a {
 
 .projects-item-img {
     overflow: hidden;
-
-/*position: relative;*/
+    /*position: relative;*/
 
     width: 100%;
 
@@ -686,8 +683,7 @@ a {
 
 .projects-item-photo {
     height: 300px;
-
-/*position: absolute;
+    /*position: absolute;
     top: 0;
     left: 0;*/
 
@@ -1300,7 +1296,7 @@ a {
         flex-direction: column;
         justify-content: center;
 
-        width: 50vw;
+        width: 100vw;
         height: 100vh;
         margin: 0;
 
@@ -1390,7 +1386,7 @@ a {
     .txt-container {
         padding: 15px;
     }
-} 
+}
 
 @media only screen and (max-width: 575px) {
     /*Intro*/
